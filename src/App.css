@@ -11,7 +11,7 @@ body{
 }
 
 #fp-nav ul li a span {
-  background-color: white;
+  background-color: white !important;
 }
 
 .wellcome {
