@@ -12,112 +12,21 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sectionsColor: [...originalColors],
-      fullpages: [
-        {
-          text: 'Welcome',
-        },
-        {
-          text: 'Sobre mí',
-        },
-        {
-          text: 'Skills',
-        },
-        {
-          text: 'Soft Skills',
-        },
-        {
-          text: 'Proyectos',
-        },
-        {
-          text: 'Más sobre mí (Blog)',
-        },
-        {
-          text: 'Contacto',
-        },
-      ],
+      sectionsColor: [...originalColors]
     };
   }
 
-  handleChangeColors() {
-    const newColors =
-      this.state.sectionsColor[0] === 'yellow'
-        ? [...originalColors]
-        : ['yellow', 'blue', 'white'];
-    this.setState({
-      sectionsColor: newColors,
-    });
-  }
-
-  handleAddSection() {
-    this.setState(state => {
-      const { fullpages } = state;
-      const { length } = fullpages;
-      fullpages.push({
-        text: `section ${length + 1}`,
-        id: Math.random(),
-      });
-
-      return {
-        fullpages: [...fullpages],
-      };
-    });
-  }
-
-  handleRemoveSection() {
-    this.setState(state => {
-      const { fullpages } = state;
-      const newPages = [...fullpages];
-      newPages.pop();
-
-      return { fullpages: newPages };
-    });
-  }
-
   render() {
-    const { fullpages } = this.state;
-
-    if (!fullpages.length) {
-      return null;
-    }
-
-    const Menu = () => (
-      <div
-        className="menu"
-        style={{
-          position: 'fixed',
-          top: 0,
-          zIndex: 100,
-        }}
-      >
-        <ul className="actions">
-          <li>
-            <button onClick={() => this.handleAddSection()}>Add Section</button>
-            <button onClick={() => this.handleRemoveSection()}>
-              Remove Section
-            </button>
-            <button onClick={() => this.handleChangeColors()}>
-              Change background colors
-            </button>
-            <button onClick={() => this.moveSectionDown()}>
-              Move Section Down
-            </button>
-          </li>
-        </ul>
-      </div>
-    );
 
     return (
       <div className="app">
-        <Menu />
         <ReactFullpage
-          debug /* Debug logging */
 
           // Required when using extensions
           pluginWrapper={pluginWrapper}
-
-          // fullpage options
-          licenseKey={'YOUR_KEY_HERE'} // Get one from https://alvarotrigo.com/fullPage/pricing/
+          navigation={true}
+          navigationPosition={'right'}
+          navigationTooltips={['HOLA', 'SOBRE MÍ', 'SKILLS', 'SOFT SKILLS', 'PROYECTOS', 'BLOG', 'CONTACTO']}
           navigation
           anchors={['welcome', 'aboutMe', 'skills', 'softSkills', 'proyects', 'moreAboutMe', 'contact']}
           sectionSelector={SECTION_SEL}
@@ -125,33 +34,39 @@ class App extends React.Component {
 
           render={comp => (
             <ReactFullpage.Wrapper>
-              <div className={`wellcome ${SEL}`} key='welcome'>
+              <section className={`active wellcome ${SEL}`} key='welcome'>
                 <h1 className="wellcome__title">¡Hola! Mi nombre es Patricia Suárez Rodríguez y soy Junior Front-end Developer</h1>
-              </div>
-              <div className={`aboutMe ${SEL}`} key='aboutMe'>
+              </section>
+              <section className={`aboutMe ${SEL}`} key='aboutMe'>
                 <h2 className="aboutMe__title">Sobre mí</h2>
-                <p className="aboutMe__tex">Mi nombre es Patricia Suárez Rodríguez y soy Junior Front-end Developer</p>
-              </div>
-              <div className={`skills ${SEL}`} key='skills'>
+                <p className="aboutMe__tex">
+                  Me llamo Patricia Suárez, de Madrid y soy una bioquímica apasionada por la ciencia que ahora quiere reinventarse y seguir creciendo dentro del mundo de la programación front-end.
+                  Soy desarrolladora web frontend junior desde junio de 2019. La curiosidad por la programación me llevó al bootcamp de Adalab y ahora, tras meses formándome, tengo verdadera pasión por todo lo que tiene relación con la tecnología y el desarrollo web. 
+                  Me encanta este sector, y para mí cada proyecto es un nuevo reto que afronto con gran entusiasmo, ganas de aprender y me implico al máximo para dar lo mejor de mí misma.
+
+                  **Añadir un quote**
+                </p>
+              </section>
+              <section className={`skills ${SEL}`} key='skills'>
                 <h2 className="skills__title">Skills</h2>
-                <p className="skills__tex">Mi nombre es Patricia Suárez Rodríguez y soy Junior Front-end Developer</p>
-              </div>
-              <div className={`soft-skills ${SEL}`} key='soft-skills'>
+                <p className="skills__tex">HTML5, CSS3, JavaScript ES6, React, Gulp, SASS, GIT, GitHub...</p>
+              </section>
+              <section className={`soft-skills ${SEL}`} key='soft-skills'>
                 <h2 className="soft-skills__title">Soft Skills</h2>
-                <p className="soft-skills__tex">Mi nombre es Patricia Suárez Rodríguez y soy Junior Front-end Developer</p>
-              </div>
-              <div className={`proyects ${SEL}`} key='proyects'>
+                <p className="soft-skills__tex">Trabajo en equipo, creatividad, proactividad...</p>
+              </section>
+              <section className={`proyects ${SEL}`} key='proyects'>
                 <h2 className="proyects__title">Proyectos</h2>
-                <p className="proyects__tex">Mi nombre es Patricia Suárez Rodríguez y soy Junior Front-end Developer</p>
-              </div>
-              <div className={`moreAboutMe ${SEL}`} key='moreAboutMe'>
+                <p className="proyects__tex">Lista de proyectos con componentes importados</p>
+              </section>
+              <section className={`moreAboutMe ${SEL}`} key='moreAboutMe'>
                 <h2 className="moreAboutMe__title">Más sobre mí</h2>
-                <p className="moreAboutMe__tex">Mi nombre es Patricia Suárez Rodríguez y soy Junior Front-end Developer</p>
-              </div>
-              <div className={`contact ${SEL}`} key='contact'>
+                <p className="moreAboutMe__tex">Blog Pasaporte en Blanco</p>
+              </section>
+              <section className={`contact ${SEL}`} key='contact'>
                 <h2 className="contact__title">Contacto</h2>
-                <p className="contact__tex">Mi nombre es Patricia Suárez Rodríguez y soy Junior Front-end Developer</p>
-              </div>
+                <p className="contact__tex">Links a RRSS</p>
+              </section>
             </ReactFullpage.Wrapper>
           )}
         />

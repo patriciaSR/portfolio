@@ -10,20 +10,38 @@ body{
   color: #fff;
 }
 
-.actions{
-  list-style-type: none;
+#fp-nav ul li a span {
+  background-color: white;
 }
-.actions button{
-  padding: .93em 1.87em;
-  background: #35495e;
-  border-radius: 5px;
-  border: 0;
-  color: #fff;
-  margin: 7px;
-  font-size: 15px;
-  cursor: pointer;
+
+.wellcome {
+  font-size: 40px;
+  padding: 0 100px;
+  
+  background: linear-gradient(rgba(17, 15, 15, 0.7), rgba(37, 34, 34, 0.7)), url("./images/cat.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.actions button:hover{
-  background: #fff;
-  color: #35495e;
+
+.aboutMe {
+  background: linear-gradient(-45deg, #ee7752, #094e5f, #0b6b46, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  padding: 0 100px;
+}
+.aboutMe__tex {
+  font-size: 20px;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
