@@ -18,10 +18,10 @@ body{
   font-size: 40px;
   padding: 0 100px;
   
-  background: linear-gradient(rgba(17, 15, 15, 0.7), rgba(37, 34, 34, 0.7)), url("./images/cat.jpg");
-  background-size: auto;
+  background: linear-gradient(rgba(17, 15, 15, 0.7), rgba(37, 34, 34, 0.7)), url("./images/jp2.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-y: 60%;
 }
 
 .aboutMe {
