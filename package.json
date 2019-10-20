@@ -1,17 +1,20 @@
 {
+  "homepage": "./",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.16",
     "fullpage.js": "^3.0.7",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && rsync -a build/ docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
