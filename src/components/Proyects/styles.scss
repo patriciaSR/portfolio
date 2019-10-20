@@ -1,0 +1,11 @@
+.proyects__container {
+  @media all and (min-width: 720px) {
+    margin: 0 auto;
+    max-width: 1000px;
+  } 
+}
+.proyects__title {
+  @media all and (min-width: 720px) {
+    text-align: left;
+  }
+}

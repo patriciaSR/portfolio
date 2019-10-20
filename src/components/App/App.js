@@ -6,6 +6,7 @@ import AboutMe from '../AboutMe';
 import Skills from '../Skills';
 
 import './App.scss';
+import Proyects from '../Proyects';
 
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
@@ -41,10 +42,7 @@ class App extends React.Component {
               <Wellcome />
               <AboutMe />
               <Skills />
-              <section className={`proyects ${SEL}`} key='proyects'>
-                <h2 className="proyects__title">Proyectos</h2>
-                <p className="proyects__tex">Lista de proyectos con componentes importados</p>
-              </section>
+              <Proyects />
               <section className={`moreAboutMe ${SEL}`} key='moreAboutMe'>
                 <h2 className="moreAboutMe__title">Más sobre mí</h2>
                 <p className="moreAboutMe__tex">Blog Pasaporte en Blanco</p>
