@@ -1,0 +1,99 @@
+@import './../../scss/variables.scss';
+@import './../../scss/mixins.scss';
+
+.aboutMe {
+  @include bg-color-gradient($grad-orange, $grad-blue, $grad-green, $grad-light-blue);
+  padding: 0 30px;
+}
+.aboutMe__container {
+  @media all and (min-width: 720px) {
+    margin: 0 auto;
+    max-width: 900px;
+  } 
+}
+.aboutMe__title {
+  @media all and (min-width: 720px) {
+    text-align: left;
+  }
+}
+.aboutMe__info{
+  @media all and (min-width: 720px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.aboutMe__text {
+  font-size: 16px;
+  text-align: left;
+  
+  @media all and (min-width: 1024px) {
+    font-size: 18px;
+  }
+}
+
+.aboutMe-photo__container {
+  margin-top: 20px;
+  max-width: 300px;
+  flex: 1;
+  @media all and (min-width: 720px) {
+    margin-top: 0;
+  }
+}
+.aboutMe__photo {
+  width: 100%;
+}
+.aboutMe-text__container {
+  flex: 1;  
+  @media all and (min-width: 720px) {
+    margin: 0 30px;
+    padding: 20px;
+    border: 1px solid $white; 
+  }
+}
+
+.aboutMe__quote {
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  max-width: 70%;
+  position: relative;
+  
+  .quote {
+    font-style: italic;
+    position: relative;
+    margin: 30px 10px 20px;
+    text-align: left;
+    font-style: italic;
+    font-size: 14px;
+  }
+  .left {
+    position: absolute;
+    top: 20px;
+    left: -6px;
+    width: 50px;
+    text-align: left;
+    font-size: 3rem;
+    color: $white;
+  }
+  .right {
+    position: absolute;
+    bottom: 20px;
+    right: 6px;
+    width: 50px;
+    text-align: right;
+    z-index: 10;
+    font-size: 3rem;
+    color: $white;
+  }
+  small {
+    font-size: 1rem;
+    color: $grad-orange;
+    position: relative;
+    
+    &:before {
+      content: "\2014 \0020";
+      width: 5px;
+    }
+  }
+}

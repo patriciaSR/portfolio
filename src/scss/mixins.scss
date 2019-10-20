@@ -1,0 +1,25 @@
+@mixin bg-image-gradient($route) {
+  background: linear-gradient(rgba(17, 15, 15, 0.7), rgba(37, 34, 34, 0.7)), url($route);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin bg-color-gradient($colorA, $colorB, $colorC, $colorD) {
+  background: linear-gradient(-45deg, $colorA, $colorB, $colorC, $colorD);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+
+//Keyframes
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

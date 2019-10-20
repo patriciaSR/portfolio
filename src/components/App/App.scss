@@ -1,0 +1,15 @@
+@import './../../scss/variables.scss';
+@import './../../scss/mixins.scss';
+
+.app {
+  text-align: center;
+}
+.custom-section{
+  text-align: center;
+  color: $white;
+}
+
+#fp-nav ul li a span {
+  background-color: $white !important;
+}
+
