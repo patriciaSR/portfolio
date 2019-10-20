@@ -1,0 +1,31 @@
+@import './../../scss/variables.scss';
+@import './../../scss/mixins.scss';
+
+@import './../../scss/variables.scss';
+@import './../../scss/mixins.scss';
+
+.skills {
+  @include bg-color-gradient($grad-orange, $grad-light-yellow, $grad-dark-yellow, $grad-light-yellow);
+  padding: 0 30px;
+}
+.skills__container {
+  @media all and (min-width: 720px) {
+    margin: 0 auto;
+    max-width: 900px;
+  } 
+}
+.skills__list {
+margin: 50px 0;
+ list-style: none;
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ grid-column-gap: 6px;
+ grid-row-gap:6px;
+
+ .skills__item {
+   margin-right: 0;
+ }
+}
+.item__icon {
+  width: 100px;
+}

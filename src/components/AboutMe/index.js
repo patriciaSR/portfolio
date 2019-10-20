@@ -23,10 +23,10 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
-        <div class="quote">
+        <div class="aboutMe__quote">
           <span class="left">❝</span>
-          <blockquote className="aboutMe__quote">
-            "Los humanos son alérgicos al cambio. Les encanta decir: "Siempre lo hemos hecho de esta manera". Yo intento luchar cada día contra eso."
+          <blockquote className="quote">
+            Los humanos son alérgicos al cambio. Les encanta decir: "Siempre lo hemos hecho de esta manera". Yo intento luchar cada día contra eso.
           </blockquote>
           <small>Grace Murray Hopper</small>
           <span class="right">❞</span>

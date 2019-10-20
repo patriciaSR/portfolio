@@ -26,20 +26,9 @@
 .aboutMe__text {
   font-size: 16px;
   text-align: left;
-
+  
   @media all and (min-width: 1024px) {
     font-size: 18px;
-  }
-}
-.aboutMe__quote {
-  margin: 30px 10px 20px;
-  text-align: left;
-  font-style: italic;
-  font-size: 14px;
-
-  span {
-    display: block;
-    margin-top: 10px;
   }
 }
 
@@ -63,44 +52,48 @@
   }
 }
 
-.quote{
+.aboutMe__quote {
   text-align: center;
   margin: auto;
   padding: 15px;
   max-width: 70%;
   position: relative;
-}
-blockquote{
-  font-style: italic;
-  position: relative;
-}
-.left{
-  position: absolute;
-  top: 20px;
-  left: -6px;
-  width: 50px;
-  text-align: left;
-  font-size: 3rem;
-  color: $white;
-}
-.right{
-  position: absolute;
-  bottom: 20px;
-  right: 6px;
-  width: 50px;
-  text-align: right;
-  z-index: 10;
-  font-size: 3rem;
-  color: $white;
-}
-small{
-  font-size: 1rem;
-  color: $grad-orange;
-  position: relative;
   
-  &:before{
-    content: "\2014 \0020";
+  .quote {
+    font-style: italic;
+    position: relative;
+    margin: 30px 10px 20px;
+    text-align: left;
+    font-style: italic;
+    font-size: 14px;
+  }
+  .left {
+    position: absolute;
+    top: 20px;
+    left: -6px;
+    width: 50px;
+    text-align: left;
+    font-size: 3rem;
+    color: $white;
+  }
+  .right {
+    position: absolute;
+    bottom: 20px;
+    right: 6px;
+    width: 50px;
+    text-align: right;
+    z-index: 10;
+    font-size: 3rem;
+    color: $white;
+  }
+  small {
+    font-size: 1rem;
+    color: $grad-orange;
+    position: relative;
     
-    width: 5px;
+    &:before {
+      content: "\2014 \0020";
+      width: 5px;
+    }
   }
 }
