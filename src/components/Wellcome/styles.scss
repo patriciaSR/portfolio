@@ -33,7 +33,11 @@
     
     .arrow__icon {
       font-size: 40px;
-      
+      transition: transform ease 1.5s, border ease 0.5s;
+
+    &:hover {
+      transform: scale(1.2) translateY(10%);
+    }
     }
   }
 }
