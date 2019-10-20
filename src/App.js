@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { pluginWrapper } from '@fullpage/react-fullpage';
+import Wellcome from './components/Wellcome/index';
 import './App.css';
 
 const SEL = 'custom-section';
@@ -34,9 +35,7 @@ class App extends React.Component {
 
           render={comp => (
             <ReactFullpage.Wrapper>
-              <section className={`active wellcome ${SEL}`} key='welcome'>
-                <h1 className="wellcome__title">¡Hola! Mi nombre es Patricia Suárez Rodríguez y soy Junior Front-end Developer</h1>
-              </section>
+              <Wellcome />
               <section className={`aboutMe ${SEL}`} key='aboutMe'>
                 <h2 className="aboutMe__title">Sobre mí</h2>
                 <p className="aboutMe__tex">

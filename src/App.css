@@ -1,27 +1,13 @@
 .app {
   text-align: center;
 }
-body{
-  font-family: arial;
-}
 .custom-section{
   text-align: center;
-  font-size: 4em;
   color: #fff;
 }
 
 #fp-nav ul li a span {
   background-color: white !important;
-}
-
-.wellcome {
-  font-size: 40px;
-  padding: 0 100px;
-  
-  background: linear-gradient(rgba(17, 15, 15, 0.7), rgba(37, 34, 34, 0.7)), url("./images/jp2-bis.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: 60%;
 }
 
 .aboutMe {
@@ -30,7 +16,7 @@ body{
   animation: gradientBG 15s ease infinite;
   padding: 0 100px;
 }
-.aboutMe__tex {
+.aboutMe__text {
   font-size: 20px;
 }
 
