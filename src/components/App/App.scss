@@ -3,6 +3,8 @@
 
 .app {
   text-align: center;
+  margin: 0 10px;
+
 }
 .custom-section{
   text-align: center;
@@ -11,13 +13,5 @@
 
 #fp-nav ul li a span {
   background-color: $white !important;
-}
-
-.aboutMe {
-  @include bg-color-gradient($grad-orange, $grad-blue, $grad-green, $grad-light-blue);
-  padding: 0 100px;
-}
-.aboutMe__text {
-  font-size: 20px;
 }
 
