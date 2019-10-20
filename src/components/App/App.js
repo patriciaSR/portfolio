@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { pluginWrapper } from '@fullpage/react-fullpage';
-import Wellcome from '../Wellcome/index';
+import Wellcome from '../Wellcome';
 import AboutMe from '../AboutMe';
+import Skills from '../Skills';
+
 import './App.scss';
 
 const SEL = 'custom-section';
@@ -28,9 +30,9 @@ class App extends React.Component {
           pluginWrapper={pluginWrapper}
           navigation={true}
           navigationPosition={'right'}
-          navigationTooltips={['HOLA', 'SOBRE MÍ', 'SKILLS', 'SOFT SKILLS', 'PROYECTOS', 'BLOG', 'CONTACTO']}
+          navigationTooltips={['HOLA', 'SOBRE MÍ', 'SKILLS', 'PROYECTOS', 'BLOG', 'CONTACTO']}
           navigation
-          anchors={['welcome', 'aboutMe', 'skills', 'softSkills', 'proyects', 'moreAboutMe', 'contact']}
+          anchors={['welcome', 'aboutMe', 'skills', 'proyects', 'moreAboutMe', 'contact']}
           sectionSelector={SECTION_SEL}
           sectionsColor={this.state.sectionsColor}
 
@@ -38,14 +40,7 @@ class App extends React.Component {
             <ReactFullpage.Wrapper>
               <Wellcome />
               <AboutMe />
-              <section className={`skills ${SEL}`} key='skills'>
-                <h2 className="skills__title">Skills</h2>
-                <p className="skills__tex">HTML5, CSS3, JavaScript ES6, React, Gulp, SASS, GIT, GitHub...</p>
-              </section>
-              <section className={`soft-skills ${SEL}`} key='soft-skills'>
-                <h2 className="soft-skills__title">Soft Skills</h2>
-                <p className="soft-skills__tex">Trabajo en equipo, creatividad, proactividad...</p>
-              </section>
+              <Skills />
               <section className={`proyects ${SEL}`} key='proyects'>
                 <h2 className="proyects__title">Proyectos</h2>
                 <p className="proyects__tex">Lista de proyectos con componentes importados</p>
