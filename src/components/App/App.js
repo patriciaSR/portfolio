@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { pluginWrapper } from '@fullpage/react-fullpage';
-import Wellcome from './components/Wellcome/index';
-import './App.css';
+import Wellcome from '../Wellcome/index';
+import './App.scss';
 
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;

@@ -1,0 +1,41 @@
+@import './../../scss/variables.scss';
+@import './../../scss/mixins.scss';
+
+.wellcome__container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.wellcome {
+  font-size: 16px;
+  padding: 0 50px;
+  @include bg-image-gradient("./../images/jp2-bis.jpg");
+  background-position-y: 60%;
+  
+  .wellcome__title {
+    margin: 0;
+
+    span {
+      display: block;
+      margin: 20px 0;
+    }
+    
+    .title__name, .title__career {
+      font-family: 'Merriweather Sans', sans-serif;
+      font-size: 30px;
+    }
+  }
+  .wellcome__arrow-link {
+    color: $white;
+    margin: 20px;
+    
+    .arrow__icon {
+      font-size: 40px;
+      
+    }
+  }
+}
+
+

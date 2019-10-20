@@ -1,16 +1,20 @@
 import React from 'react';
-import './styles.css';
+import './styles.scss';
 
 const Wellcome = () => {
   return (
     <section className="active wellcome custom-section">
-      <h1 className="wellcome__title">
-        <span>¡Hola!</span>
-        <span>Mi nombre es</span>
+      <div className="wellcome__container">
+        <h1 className="wellcome__title">
+          ¡Hola! Mi nombre es
         <span className="title__name">Patricia Suárez Rodríguez</span>
-        <span>y soy</span>
-        <span className="title__career">Junior Front-end Developer</span>
-      </h1>
+          y soy
+        <span className="title__career">Front-end Developer</span>
+        </h1>
+        <a href="#aboutMe" className="wellcome__arrow-link">
+          <i class="fas fa-chevron-circle-down arrow__icon"></i>
+        </a>
+      </div>
     </section>
   )
 }
