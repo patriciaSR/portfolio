@@ -12,7 +12,7 @@ const Wellcome = () => {
         <span className="title__career">Front-end Developer</span>
         </h1>
         <a href="#aboutMe" className="wellcome__arrow-link">
-          <i class="fas fa-chevron-circle-down arrow__icon"></i>
+          <i className="fas fa-chevron-circle-down arrow__icon"></i>
         </a>
       </div>
     </section>

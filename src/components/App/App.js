@@ -2,6 +2,7 @@ import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { pluginWrapper } from '@fullpage/react-fullpage';
 import Wellcome from '../Wellcome/index';
+import AboutMe from '../AboutMe';
 import './App.scss';
 
 const SEL = 'custom-section';
@@ -36,16 +37,7 @@ class App extends React.Component {
           render={comp => (
             <ReactFullpage.Wrapper>
               <Wellcome />
-              <section className={`aboutMe ${SEL}`} key='aboutMe'>
-                <h2 className="aboutMe__title">Sobre mí</h2>
-                <p className="aboutMe__tex">
-                  Me llamo Patricia Suárez, de Madrid y soy una bioquímica apasionada por la ciencia que ahora quiere reinventarse y seguir creciendo dentro del mundo de la programación front-end.
-                  Soy desarrolladora web frontend junior desde junio de 2019. La curiosidad por la programación me llevó al bootcamp de Adalab y ahora, tras meses formándome, tengo verdadera pasión por todo lo que tiene relación con la tecnología y el desarrollo web. 
-                  Me encanta este sector, y para mí cada proyecto es un nuevo reto que afronto con gran entusiasmo, ganas de aprender y me implico al máximo para dar lo mejor de mí misma.
-
-                  **Añadir un quote**
-                </p>
-              </section>
+              <AboutMe />
               <section className={`skills ${SEL}`} key='skills'>
                 <h2 className="skills__title">Skills</h2>
                 <p className="skills__tex">HTML5, CSS3, JavaScript ES6, React, Gulp, SASS, GIT, GitHub...</p>
