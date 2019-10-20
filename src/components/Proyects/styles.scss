@@ -1,3 +1,9 @@
+@import './../../scss/variables.scss';
+@import './../../scss/mixins.scss';
+
+.proyects {
+  @include bg-color-gradient($grad-green, $grad-light-blue, $grad-blue, $grad-light-green);
+}
 .proyects__container {
   @media all and (min-width: 720px) {
     margin: 0 auto;

@@ -12,6 +12,7 @@ const useStyles = makeStyles(theme => ({
   image: {
     position: 'relative',
     height: 200,
+    margin: '5px',
     [theme.breakpoints.down('xs')]: {
       width: '100% !important', // Overrides inline-style
       height: 100,
@@ -19,14 +20,14 @@ const useStyles = makeStyles(theme => ({
     '&:hover, &$focusVisible': {
       zIndex: 1,
       '& $imageBackdrop': {
-        opacity: 0.35,
+        opacity: 0,
       },
       '& $imageMarked': {
         opacity: 0,
       },
       '& $imageTitle': {
-        border: '4px solid currentColor',
         opacity: 1,
+        backgroundColor: '#080708a2',
       },
     },
   },
