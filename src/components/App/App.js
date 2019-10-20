@@ -30,9 +30,9 @@ class App extends React.Component {
           pluginWrapper={pluginWrapper}
           navigation={true}
           navigationPosition={'right'}
-          navigationTooltips={['HOLA', 'SOBRE MÍ', 'SKILLS', 'SOFT SKILLS', 'PROYECTOS', 'BLOG', 'CONTACTO']}
+          navigationTooltips={['HOLA', 'SOBRE MÍ', 'SKILLS', 'PROYECTOS', 'BLOG', 'CONTACTO']}
           navigation
-          anchors={['welcome', 'aboutMe', 'skills', 'softSkills', 'proyects', 'moreAboutMe', 'contact']}
+          anchors={['welcome', 'aboutMe', 'skills', 'proyects', 'moreAboutMe', 'contact']}
           sectionSelector={SECTION_SEL}
           sectionsColor={this.state.sectionsColor}
 
@@ -41,10 +41,6 @@ class App extends React.Component {
               <Wellcome />
               <AboutMe />
               <Skills />
-              <section className={`soft-skills ${SEL}`} key='soft-skills'>
-                <h2 className="soft-skills__title">Soft Skills</h2>
-                <p className="soft-skills__tex">Trabajo en equipo, creatividad, proactividad...</p>
-              </section>
               <section className={`proyects ${SEL}`} key='proyects'>
                 <h2 className="proyects__title">Proyectos</h2>
                 <p className="proyects__tex">Lista de proyectos con componentes importados</p>
