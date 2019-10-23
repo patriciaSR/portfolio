@@ -2,7 +2,7 @@
 @import './../../scss/mixins.scss';
 
 .aboutMe {
-  @include bg-color-gradient($grad-orange, $grad-blue, $grad-green, $grad-light-blue);
+  @include bg-color-gradient($grad-colors-1);
   padding: 0 30px;
 }
 .aboutMe__container {
