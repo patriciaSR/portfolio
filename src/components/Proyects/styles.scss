@@ -3,7 +3,9 @@
 
 .proyects {
   @include bg-color-gradient($grad-colors-3);
-  padding: 0 30px;
+  @media all and (min-width: 720px){
+    padding: 0 30px;
+  }
 }
 .proyects__container {
   @media all and (min-width: 720px) {

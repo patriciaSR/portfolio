@@ -1,0 +1,85 @@
+@import './../../scss/variables.scss';
+@import './../../scss/mixins.scss';
+
+.contact {
+  @include bg-color-gradient($grad-colors-6);
+
+  .fp-tableCell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+  
+.contact__container {
+  width:100%;
+  @media all and (min-width: 720px) {
+    margin: 0 auto;
+    max-width: 900px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+}
+.contact__title {
+  @media all and (min-width: 720px) {
+    text-align: left;
+    align-self: flex-start;
+    padding: 0 30px;
+  }
+  @media all and (min-width: 1024px) {
+    padding: 0;
+  }
+}
+.contact__list {
+  list-style: none;
+  width: 100%;
+  max-height: 300px;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap:20px;
+  
+  @media all and (min-width: 720px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+.contact__link, .contact__icon, .footer__link {
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    color: $grad-light-blue;
+  }
+}
+.contact__icon {
+  @media all and (min-width: 720px) {
+    font-size: 50px;
+  }
+}
+.link__text {
+  margin: 10px;
+
+  @media all and (min-width: 720px) {
+    display: block;
+  }
+}
+
+.page__footer {
+  margin-top: 70px;
+  padding: 30px 0;
+  width:100%;
+  border-top: 1px solid $grad-light-blue;
+
+  .footer__text {
+    @media all and (max-width: 720px) {
+      display: block;
+    }    
+    line-height: 30px;
+  }
+}
