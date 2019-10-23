@@ -7,6 +7,7 @@ import Skills from '../Skills';
 
 import './App.scss';
 import Proyects from '../Proyects';
+import MoreAboutMe from '../MoreAboutMe';
 
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
@@ -43,11 +44,7 @@ class App extends React.Component {
               <AboutMe />
               <Skills />
               <Proyects />
-              <section className={`moreAboutMe ${SEL}`} key='moreAboutMe'>
-                <h2 className="moreAboutMe__title">Más sobre mí</h2>
-                <p className="moreAboutMe__tex">Blog Pasaporte en Blanco</p>
-                <a href="https://www.pasaporteenblanco.com/" target="_blank" rel="noopener noreferrer" className="moreAboutMe__link">Link a Pasaporte en Blanco</a>
-              </section>
+              <MoreAboutMe />
               <section className={`contact ${SEL}`} key='contact'>
                 <h2 className="contact__title">Contacto</h2>
                 <p className="contact__tex">Links a RRSS</p>

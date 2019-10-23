@@ -2,7 +2,7 @@
 @import './../../scss/mixins.scss';
 
 .skills {
-  @include bg-color-gradient($grad-orange, $grad-light-pink, $grad-dark-orange, $grad-dark-pink);
+  @include bg-color-gradient($grad-colors-2);
   padding: 0 30px;
 }
 .skills__container {

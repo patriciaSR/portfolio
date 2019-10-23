@@ -1,0 +1,66 @@
+@import './../../scss/variables.scss';
+@import './../../scss/mixins.scss';
+
+.moreAboutMe {
+  @include bg-color-gradient($grad-colors-5);
+  padding: 0 30px;
+}
+.moreAboutMe__container {
+  @media all and (min-width: 720px) {
+    margin: 0 auto;
+    max-width: 900px;
+  } 
+}
+.moreAboutMe__title {
+  @media all and (min-width: 720px) {
+    text-align: left;
+  }
+}
+.moreAboutMe__info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.moreAboutMe__text {
+  font-size: 16px;
+  text-align: left;
+  
+  @media all and (min-width: 1024px) {
+    font-size: 18px;
+  }
+}
+.moreAboutMe-photo__container {
+  max-width: 600px;
+  position: relative;
+  
+
+  &:hover:before {
+    content: "Descubre Pasaporte en Blanco";
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.452);
+    cursor: pointer;
+
+    img {
+      filter: blur(3px);
+    }
+  }
+}
+.moreAboutMe__photo {
+  width: 100%;
+}
+.moreAboutMe__photo:hover {
+  filter: blur(3px);
+}
+
+:before:hover > .moreAboutMe__photo {
+  filter: blur(3px);
+}
