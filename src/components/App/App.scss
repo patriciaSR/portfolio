@@ -13,3 +13,8 @@
   background-color: $white !important;
 }
 
+#fp-nav {
+  @media all and (max-width: 500px) {
+    display: none;
+  }
+}
