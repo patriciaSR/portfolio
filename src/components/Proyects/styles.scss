@@ -2,7 +2,10 @@
 @import './../../scss/mixins.scss';
 
 .proyects {
-  @include bg-color-gradient($grad-green, $grad-light-blue, $grad-blue, $grad-light-green);
+  @include bg-color-gradient($grad-colors-3);
+  @media all and (min-width: 720px){
+    padding: 0 30px;
+  }
 }
 .proyects__container {
   @media all and (min-width: 720px) {

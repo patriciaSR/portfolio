@@ -7,6 +7,8 @@ import Skills from '../Skills';
 
 import './App.scss';
 import Proyects from '../Proyects';
+import MoreAboutMe from '../MoreAboutMe';
+import Contact from '../Contact';
 
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
@@ -43,33 +45,8 @@ class App extends React.Component {
               <AboutMe />
               <Skills />
               <Proyects />
-              <section className={`moreAboutMe ${SEL}`} key='moreAboutMe'>
-                <h2 className="moreAboutMe__title">Más sobre mí</h2>
-                <p className="moreAboutMe__tex">Blog Pasaporte en Blanco</p>
-                <a href="https://www.pasaporteenblanco.com/" target="_blank" rel="noopener noreferrer" className="moreAboutMe__link">Link a Pasaporte en Blanco</a>
-              </section>
-              <section className={`contact ${SEL}`} key='contact'>
-                <h2 className="contact__title">Contacto</h2>
-                <p className="contact__tex">Links a RRSS</p>
-                <ul className="contact__list">
-                  <li className="contact__item">
-                    <a href="https://github.com/patriciaSR" target="_blank" rel="noopener noreferrer" className="contact__link">Github</a>
-                  </li>
-                  <li className="contact__item">
-                    <a href="https://www.linkedin.com/in/patricia-suarez-rodriguez/" target="_blank" rel="noopener noreferrer" className="contact__link">LinkedIn</a>
-                  </li>
-                  <li className="contact__item">
-                    <a href="https://twitter.com/patriiSR" target="_blank" rel="noopener noreferrer" className="contact__link">Twitter</a>
-                  </li>
-                  <li className="contact__item">
-                    <a href="mailto:patricia.suarez.psr@gmail.com" target="_blank" rel="noopener noreferrer" className="contact__link">Mail</a>
-                  </li>
-                </ul>
-                <footer className="page__footer">
-                  <span className="footer__text">Diseñado y desarrollado por </span>
-                  <a href="https://github.com/patriciaSR" target="_blank" rel="noopener noreferrer" className="footer__link">@patriciaSR</a>
-                </footer>
-              </section>
+              <MoreAboutMe />
+              <Contact />
             </ReactFullpage.Wrapper>
           )}
         />
