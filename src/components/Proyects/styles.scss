@@ -2,12 +2,16 @@
 @import './../../scss/mixins.scss';
 
 .proyects {
+  padding: 10px;
   @include bg-color-gradient($grad-colors-3);
+
   @media all and (min-width: 720px){
     padding: 0 30px;
   }
 }
 .proyects__container {
+  padding-bottom: 30px;
+
   @media all and (min-width: 720px) {
     margin: 0 auto;
     max-width: 1000px;

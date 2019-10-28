@@ -23,6 +23,7 @@ const MoreAboutMe = () => {
             <a href="https://www.pasaporteenblanco.com/" target="_blank" rel="noopener noreferrer" className="moreAboutMe__link">
               <img src={blogPhoto} alt="blog-pasaporte-en-blanco" className="moreAboutMe__photo" />
             </a>
+            <a href="https://www.pasaporteenblanco.com/" target="_blank" rel="noopener noreferrer" className="pasaporte__link">Descubre Pasaporte en Blanco</a>
           </div>
         </div>
 

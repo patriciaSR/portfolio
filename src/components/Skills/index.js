@@ -18,7 +18,7 @@ const Skills = () => {
       <div className="skills__container">
         <h2 className="skills__title">Skills</h2>
         <p className="skills__tex">
-          Estoy especializada en diseño y desarrollo web con <strong>HTML5, CSS3 y JavaScript</strong>. Tengo experiencia desarrolando aplicaciones web con <strong>React</strong> y nunca me olvido de trabajar con herramientas como <strong>Sass, Gulp, git o gitHub</strong>.
+          Estoy especializada en diseño y desarrollo web con <strong>HTML5, CSS3 y JavaScript</strong>. Tengo experiencia desarrolando aplicaciones web con <strong>React</strong> y nunca me olvido de trabajar con herramientas como <strong>Sass, Gulp, Git o GitHub</strong>.
         </p>
         <ul className="skills__list">
           <li className="skills__item">
