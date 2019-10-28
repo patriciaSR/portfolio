@@ -31,6 +31,10 @@ class App extends React.Component {
 
           // Required when using extensions
           pluginWrapper={pluginWrapper}
+          recordHistory={false}
+          scrollOverflow={true}
+          scrollBar={false}
+          scrollOverflowReset={true}
           navigation={true}
           navigationPosition={'right'}
           navigationTooltips={['HOLA', 'SOBRE MÍ', 'SKILLS', 'PROYECTOS', 'BLOG', 'CONTACTO']}
