@@ -34,21 +34,29 @@
 .moreAboutMe-photo__container {
   max-width: 600px;
   position: relative;
+  overflow: hidden;
   
-
-  &:hover:before {
-    content: "Descubre Pasaporte en Blanco";
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    z-index: 1;
-    top: 45%;
-    left: 0;
-    width: 100%;
-    padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.452);
-    cursor: pointer;
-
+  .pasaporte__link{
+    display: none;
+  }
+  
+  &:hover {
+    .pasaporte__link{
+      text-decoration: none;
+      color: $white;
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      z-index: 1;
+      top: 45%;
+      left: 0;
+      width: 100%;
+      padding: 20px 0;
+      background-color: rgba(0, 0, 0, 0.452);
+      cursor: pointer;
+    }
+    
     img {
       filter: blur(3px);
     }
@@ -56,11 +64,4 @@
 }
 .moreAboutMe__photo {
   width: 100%;
-}
-.moreAboutMe__photo:hover {
-  filter: blur(3px);
-}
-
-:before:hover > .moreAboutMe__photo {
-  filter: blur(3px);
 }
