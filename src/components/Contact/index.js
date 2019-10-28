@@ -6,6 +6,8 @@ const Contact = () => {
     <section className="contact custom-section" key='contact'>
       <div className="contact__container">
         <h2 className="contact__title">Contacto</h2>
+        <p className="contact__text">¿Quieres saber más mí?</p>
+        <p className="contact__text">Si estás buscando un frontend o simplemente quieres conocerme más, contáctame y hablamos.</p>
         <ul className="contact__list">
           <li className="contact__item">
             <a draggable="false" href="https://github.com/patriciaSR" target="_blank" rel="noopener noreferrer" className="contact__link">
