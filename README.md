@@ -5,10 +5,12 @@ Me llamo Patricia Suárez y soy una bioquímica apasionada por la ciencia que ah
 
 Este es mi portfolio, donde podrás encontrar más información sobre mí y mi forma de trabajar. Encontrarás cuáles son mis proyectos más importantes y qué es lo que me gusta hacer en mi tiempo libre.
 
-¿Te atreves a descubrirlo?
+## ¿Te atreves a descubrirlo?
+
+![Go!cat gif](./src/images/cat.gif)
 
 
-## Información técnica
+## Instalación
 
 Este proyecto está construído con [Create React App](https://github.com/facebook/create-react-app).
 
