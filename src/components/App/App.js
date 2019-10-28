@@ -1,4 +1,5 @@
 import React from 'react';
+import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from '@fullpage/react-fullpage';
 import { pluginWrapper } from '@fullpage/react-fullpage';
 import Wellcome from '../Wellcome';
@@ -31,10 +32,11 @@ class App extends React.Component {
 
           // Required when using extensions
           pluginWrapper={pluginWrapper}
+          recordHistory={false}
+          scrollOverflow={true}
           navigation={true}
           navigationPosition={'right'}
           navigationTooltips={['HOLA', 'SOBRE MÍ', 'SKILLS', 'PROYECTOS', 'BLOG', 'CONTACTO']}
-          navigation
           anchors={['welcome', 'aboutMe', 'skills', 'proyects', 'moreAboutMe', 'contact']}
           sectionSelector={SECTION_SEL}
           sectionsColor={this.state.sectionsColor}

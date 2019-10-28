@@ -1,5 +1,5 @@
 @mixin bg-image-gradient($route) {
-  background: linear-gradient(rgba(17, 15, 15, 0.7), rgba(37, 34, 34, 0.7)), url($route);
+  background: linear-gradient(rgba(17, 15, 15, 0.8), rgba(37, 34, 34, 0.8)), url($route);
   background-size: cover;
   background-repeat: no-repeat;
 }
