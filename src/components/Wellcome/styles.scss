@@ -1,11 +1,18 @@
 @import './../../scss/variables.scss';
 @import './../../scss/mixins.scss';
 
+.iScrollVerticalScrollbar {
+  display: none;
+}
+.wellcome .fp-scroller {
+  height: 100%;
+}
 .wellcome__container {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100%;
 }
 .wellcome {
