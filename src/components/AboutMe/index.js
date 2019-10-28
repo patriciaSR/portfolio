@@ -13,7 +13,7 @@ const AboutMe = () => {
           </div>
           <div className="aboutMe-text__container">
             <p className="aboutMe__text">
-              Me llamo Patricia Suárez, de Madrid y soy una bioquímica apasionada por la ciencia que ahora quiere reinventarse y seguir creciendo dentro del mundo de la programación front-end.
+              Me llamo Patricia Suárez, de Madrid, y soy una bioquímica apasionada por la ciencia que ahora quiere reinventarse y seguir creciendo dentro del mundo de la programación front-end.
             </p>
             <p className="aboutMe__text">
               Soy desarrolladora web frontend desde junio de 2019. La curiosidad por la programación me llevó al bootcamp de Adalab y ahora, tras meses formándome, tengo verdadera pasión por todo lo que tiene relación con la tecnología y el desarrollo web.
